@@ -1,0 +1,253 @@
+*{margin: 0; padding: 0; font-family: Calibri;}
+#wrapper{
+  position: relative;
+  background-color: whitesmoke;
+  min-height: 100vh; /*Because of footer*/
+}
+
+/*---------- Header and Navigation Section------------- */
+header{
+  display: block;
+  position: sticky;
+  height: 300px;
+  background-color: rgb(234, 234, 234);
+}
+        header h1{
+          display: block;
+          position: absolute;
+          top: 0; left: 0;
+          width: 50%; height: 35px;
+          padding-top: 10px; padding-bottom: 10px;
+          text-align: center;
+          background-color: steelblue;
+        }
+        header h1 a:link{color: whitesmoke; text-decoration: none;}
+        header h1 a:active{color: whitesmoke;}
+        header h1 a:visited{color: whitesmoke;}
+
+nav{
+  display: block;
+  position: absolute;
+  height: 35px; width: 50%; top: 0; right: 0;
+  padding-top: 10px; padding-bottom: 10px;
+  background-color: steelblue;
+        }
+        nav ul{
+          display: block;
+          padding-right: 200px;
+          height: 100%;
+        }
+        nav li{
+          display: block;
+          float: right;
+          height: 100%;
+        }
+        nav li a{
+          display: inline-block;
+          text-decoration: none;
+          padding: 0 10px;
+          height: 100%;
+          font-size: 25px;
+        }
+        nav li a:link{color: whitesmoke;}
+        nav li a:active{color: whitesmoke;}
+        nav li a:visited{color: whitesmoke;}
+        nav li a:hover{text-decoration: underline;}
+
+  nav ul:after{
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+  header .header_img{
+    display: block;
+    float: left;
+    width: 33.33%;
+    height: 280px;
+    border-bottom: 20px solid rgba(70, 131, 180, 0.746); 
+  }
+  .header_img img{
+    display: block;
+    max-height: 40%;
+    max-width: 40%;
+    margin: 120px auto 0 auto;
+  }
+  
+  .active{
+    text-decoration: underline;
+  }
+  header span{
+    opacity: 0.5;
+    color: whitesmoke;
+  }
+  .logged_in{
+    color: rgb(143, 8, 8);
+  }
+
+/* ------Header Nav responsive----------- */
+@media (max-width: 1150px){
+  header nav ul{
+    padding-right: 100px;
+  }
+}
+@media (max-width: 993px){
+  header{
+    height: 220px;
+  }
+  header .header_img{
+    height: 200px;
+  }
+  header img{
+    margin: 80px auto 0 auto;
+  }
+}
+@media (max-width: 691px){
+  header .header_img{
+    display: none;
+  }
+  header #display{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 842px){
+  header h1{
+    clear: both;
+    width: 100%;
+  }
+  header nav{
+    clear: both;
+    width: 100%;
+    top: 55px;
+  }
+  header nav ul{
+    padding-right: 0;
+    text-align: center;
+  }
+  header nav ul li{
+    width: 50%;
+  }
+  header h1 span{
+    display: none;
+  }
+}
+@media (max-width: 650px){
+  header nav ul li{
+    width: 50%;
+    text-align: center;
+  }
+}
+@media (max-width: 576px){
+  header nav{
+    height: max-content;
+  }
+  header nav ul{
+    height: max-content;
+  }
+  header nav ul li{
+    clear: both;
+    width: 100%;
+    padding: 10px;
+  }
+  header #display{
+    display: none;
+  }
+  header{
+    height: 177px;
+  }
+}
+
+/*---------- Header and Navigation Section------------- */
+
+
+
+
+
+
+/* --------------Content Section------------------------- */
+#content{
+  display: block;
+  width: 100%; min-height: 400px; height: max-content;
+  margin: 0 auto;
+  padding-bottom: 3rem; /* Zbog footera */
+  background-color: whitesmoke;
+}
+/* --------------Content Section------------------------- */
+
+
+
+
+
+/* --------------Footer Section----------------------- */
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: steelblue;
+}
+
+footer ul{
+  display: block;
+  width: 50%; height: 100%; margin: 0 8% 0 42%;
+}
+
+footer ul li{
+  display: block;
+  float: right;
+  height: 100%; width: 200px;
+  text-align: center;
+}
+
+footer ul li a{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 8px 20px 8px 20px;
+}
+
+footer a:link{color: whitesmoke; text-decoration: none;}
+footer a:active{color: whitesmoke;}
+footer a:visited{color: whitesmoke;}
+footer a:hover{text-decoration: underline;}
+
+
+footer ul:after{
+  display: table;
+  content: "";
+  clear: both;
+}
+#noscript{
+  display: block;
+  width: 50%;
+  position: absolute;
+  font-size: 20px;
+  padding: 5px;
+  color: whitesmoke;
+}
+footer ul li .active{
+  text-decoration: underline;
+}
+/* -------------------Footer Responsive--------------- */
+@media screen and (max-width: 1220px){
+  footer ul{
+    width: 100%;
+    margin: 0;
+  }
+  footer ul li{
+    width: 33.33%;
+  }
+}
+@media (max-width: 576px){
+  footer{
+    height: max-content;
+  }
+
+  footer ul li{
+    clear: both;
+    width: 100%;
+  }
+
+}  

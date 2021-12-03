@@ -1,0 +1,103 @@
+  #columns_wrapper_project{
+    display: block;
+    background-color: whitesmoke;
+    width: 1400px; height: max-content; 
+    margin: 0 auto;
+    padding-top: 60px;
+    color: dimgray;
+  }
+  #columns_wrapper_project article{
+    display: block;
+    width: 100%;
+  }
+  #columns_wrapper_project article h3{
+    text-align: center;
+    padding: 10px;
+    font-size: 23px;
+    border-bottom: 2px solid rgba(70, 131, 180, 0.404);
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: rgba(70, 131, 180, 0.746);
+  }
+  #columns_wrapper_project article p{
+    margin-top: 5px;
+    padding: 10px;
+  }
+  #columns_wrapper_project div article img{
+    display: block;
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+    margin: 10px auto;
+    border-top: 2px solid steelblue;
+    border-bottom: 2px solid steelblue;
+  }
+  #first_col, #second_col, #third_col{
+    display: block;
+    height: 550px;
+    width: 31.3%;
+    margin: 1%;
+    float: left;
+  }
+  #first_col article, #second_col article, #third_col article{
+    margin: 10px 0;
+    border-radius: 15px;
+    border: 2px solid steelblue;
+  }
+
+    #first_col article:first-child, #third_col article:first-child{height: 300px;}
+    #first_col article:last-child, #third_col article:last-child{height: 200px;}
+    #second_col article:first-child{height: 200px;}
+    #second_col article:last-child{height: 300px;}
+
+  /* -------Clear Both after columns */
+  #columns_wrapper_project:after{
+    display: table; content: ""; clear: both;
+  }
+
+
+
+  @media (max-width: 1400px){
+    #columns_wrapper_project{
+      width: 100%;
+    }
+    #first_col article p, #second_col article p, #third_col article p{
+      height: max-content;
+    }
+  }
+  @media (max-width: 1263px){
+    
+    #first_col, #second_col, #third_col{
+      width: 100%;
+      margin-top: 0;
+      height: max-content;
+    }
+    #first_col article, #second_col article, #third_col article{
+      width: 50%;
+      margin: 2% 25%;
+      height: max-content;
+    }
+  }
+
+  @media (max-width: 798px){
+    #first_col article, #second_col article, #third_col article{
+      width: 80%;
+      margin-left: 10%; margin-right: 10%;
+    }
+  }
+
+  @media (max-width: 576px){
+    #columns_wrapper_project{
+      padding-bottom: 100px;
+    }
+    #first_col article, #second_col article, #third_col article{
+      width: 96%;
+      margin-left: 2%; margin-right: 2%;
+    }
+  }
+
+  @media (max-width: 410px){
+    #columns_wrapper_project{
+      min-width: 410px;
+    }
+  }

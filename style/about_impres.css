@@ -1,0 +1,82 @@
+/* ----About us------------- */
+#wrapper_about_us{
+  display: block;
+  width: 1200px; height: max-content; 
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 19px;
+  color: dimgray;
+}
+#wrapper_about_us p{
+  padding: 20px 1% 0 1%;
+}
+@media (max-width: 1400px){
+  #wrapper_about_us{
+    width: 94%;
+    margin: 3%;
+    padding: 5px;
+    height: max-content;
+  }
+}
+@media (max-width: 635px){
+  #wrapper_about_us{
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 576px){
+  #wrapper_about_us{
+    padding-bottom: 150px;
+  }
+} 
+
+/* ---------Impressum------------ */
+#impressum_wrapper{
+  display: block;
+  width: 1400px;
+  margin: 0 auto;
+  color: dimgray;
+  padding-bottom: 40px;
+}
+#impressum_wrapper p{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  width: 50%;
+  margin: 10px auto;
+}
+#impressum_wrapper h2{
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+#impressum_wrapper h3{
+  font-size: 25px;
+  margin-top: 20px;
+}
+#impressum_wrapper h4{
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+@media (max-width: 1400px){
+  #impressum_wrapper{
+    width: 80%;
+    margin: 0 10%;
+  }
+  #impressum_wrapper p{
+    width: 80%;
+    margin: 10px 10%;
+  }
+}
+@media (max-width: 880px){
+  #impressum_wrapper{
+    width: 98%;
+    margin: 0 1%;
+  }
+}
+@media (max-width: 576px){
+  #impressum_wrapper{
+    padding-bottom: 100px;
+  }
+}
